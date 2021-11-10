@@ -1,0 +1,10 @@
+<h1>Result</h1>
+
+<h2><%= params[:grid].split(" ") %></h2>
+<h2><%= @result["found"] %></h2>
+<h2><%= @result["word"].split("") %></h2>
+<h2><%= @result["length"] %></h2>
+
+<h2><%= ( params[:grid].split(" ") & @result["word"].split("") ).any? %></h2>
+
+<h2><%= @reply %></h2>
